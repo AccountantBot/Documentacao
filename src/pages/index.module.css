@@ -1,0 +1,227 @@
+.heroBanner {
+  padding: 6rem 0 5rem;
+  background: linear-gradient(135deg, var(--ifm-color-primary), #5a4af4);
+  color: #fff;
+}
+
+.heroContent {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.heroBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.2);
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.heroTitle {
+  font-size: clamp(2.75rem, 4vw, 4rem);
+  margin-top: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.heroSubtitle {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.92);
+  margin-bottom: 1.5rem;
+}
+
+.heroHighlights {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.heroHighlights li::before {
+  content: '✦';
+  margin-right: 0.6rem;
+}
+
+.buttonGhost {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.75);
+  background: transparent;
+}
+
+.buttonGhost:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.section {
+  padding: 4.5rem 0;
+}
+
+.sectionAlt {
+  background: var(--ifm-background-surface-color);
+}
+
+.sectionHeader {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 3rem;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: var(--ifm-background-surface-color);
+  border-radius: 16px;
+  padding: 1.8rem;
+  box-shadow: 0 22px 45px rgba(15, 23, 42, 0.06);
+  border: 1px solid rgba(99, 102, 241, 0.1);
+}
+
+.sectionAlt .card {
+  background: var(--ifm-background-color);
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  margin-bottom: 0.6rem;
+}
+
+.card p {
+  margin: 0;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.timeline {
+  display: grid;
+  gap: 2rem;
+}
+
+.timelineItem {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.timelineStep {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--ifm-color-primary);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.15rem;
+  box-shadow: 0 12px 22px rgba(76, 81, 191, 0.25);
+}
+
+.timelineTitle {
+  margin-bottom: 0.4rem;
+  font-size: 1.2rem;
+}
+
+.timelineItem p {
+  margin: 0;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.linksGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.docLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  background: rgba(99, 102, 241, 0.08);
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.docLink:hover {
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 18px 35px rgba(99, 102, 241, 0.15);
+}
+
+.repoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.4rem;
+}
+
+.repoCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  padding: 1.6rem;
+  border-radius: 16px;
+  border: 1px solid rgba(99, 102, 241, 0.18);
+  background: var(--ifm-background-surface-color);
+  color: inherit;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.repoCard:hover {
+  text-decoration: none;
+  transform: translateY(-3px);
+  box-shadow: 0 22px 45px rgba(88, 91, 198, 0.16);
+}
+
+.repoName {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--ifm-color-primary);
+}
+
+.repoDescription {
+  color: var(--ifm-color-emphasis-700);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 4rem 1.5rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1rem;
+  }
+
+  .timelineItem {
+    grid-template-columns: 1fr;
+  }
+
+  .timelineStep {
+    margin-bottom: 0.6rem;
+  }
+}

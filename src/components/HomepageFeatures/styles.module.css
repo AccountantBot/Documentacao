@@ -1,0 +1,56 @@
+.features {
+  padding: 2rem 0 4rem;
+}
+
+.featureGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.75rem;
+}
+
+.featureCard {
+  background: var(--ifm-background-surface-color);
+  border-radius: 18px;
+  padding: 2rem 1.75rem;
+  box-shadow: 0 18px 35px rgba(15, 23, 42, 0.08);
+  border: 1px solid rgba(99, 102, 241, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.featureIcon {
+  font-size: 2rem;
+  background: rgba(99, 102, 241, 0.12);
+  color: var(--ifm-color-primary);
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.featureEmoji {
+  display: inline-flex;
+}
+
+.featureTitle {
+  margin: 0;
+  font-size: 1.35rem;
+}
+
+.featureCaption {
+  margin: 0;
+  color: var(--ifm-color-emphasis-600);
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.featureDescription {
+  margin: 0;
+  color: var(--ifm-color-emphasis-700);
+  line-height: 1.7;
+}
